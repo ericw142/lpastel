@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lpastel</title>
+    <link rel="icon" href="./images/lpastel_logo1.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./font.css">
+</head>
+<body>
+    <div class="hero text-align-center">
+        <img class="hero-image" src="./images/lpastel_logo1.jpeg" alt="lpastel_logo" width="600">
+        <p>inspired by the brilliant <a href="https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw" target="_blank">Kevin Powell</a> and <a href="https://cube.fyi/" target="_blank">cube css</a></p>
+        <p>a collection of css styles built to be lightweight and customizable</p>
+    </div>
+
+    <div class="flex-row justify-center padding-top-24 padding-bottom-24">
+        <div class="bg-neutral-100 br-1 padding-24">
+            <div class="text-align-center">
+                <h1>flex-row</h1>
+                <p>A wrapper that applies display: flex; with a default gap of 1rem.  The var(--gap) is included to allow the gap to be overwritten.</p>
+            </div>
+            <div class="grid-flow">
+                <div class="block"></div>
+                <div>
+                    <div class="flex-row justify-center">
+                        <div class="br-2 bg-info block"></div>
+                        <div class="br-2 bg-info block"></div>
+                        <div class="br-2 bg-info block"></div>
+                        <div class="br-2 bg-info block"></div>
+                        <div class="br-2 bg-info block"></div>
+                        <div class="br-2 bg-info block"></div>
+                    </div>
+                </div>
+                <div class="block"></div>
+            </div>
+        </div>
+        <div class="bg-neutral-100 br-1 padding-24">
+            <div class="text-align-center">
+                <h1>grid-flow</h1>
+                <p>A similar wrapper to flex-row that instead sets display: grid;</p>
+            </div>
+            <div class="grid-flow justify-center">
+                <div class="br-2 bg-info block"></div>
+                <div class="br-2 bg-info block"></div>
+                <div class="br-2 bg-info block"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="br-1 text-align-center padding-24">
+        <div class="bg-neutral-100 br-1 padding-24">
+            <h1>Buttons</h1>
+            <p>Buttons are minimal elements that only include style rules for background & text color.</p>
+            <div class="flex-row justify-center padding-24">
+                <button class="btn btn-primary">primary</button>
+                <button class="btn btn-secondary">secondary</button>
+                <button class="btn btn-success">success</button>
+                <button class="btn btn-danger">danger</button>
+                <button class="btn btn-warning">warning</button>
+                <button class="btn btn-info">info</button>
+                <button class="btn btn-light">light</button>
+                <button class="btn btn-dark">dark</button>
+            </div>
+        </div>
+    </div>
+
+        <div class="text-align-center padding-24">
+            <h1>Cards</h1>
+            <p>
+                Cards are predefined containers that include several optional child elements. The maximum width of a card is set to 30rem, and card-images are by default set to 480 width.
+            </p>
+            <p>Photo by Maryna Yazbeck @yazbeckistan on <a href="https://unsplash.com/photos/yv1is2sVAHQ" target="_blank">Unsplash</a></p>
+        </div>
+        <div class="bg-primary flex-row justify-center padding-24">
+            <div class="card bg-neutral-100 text-align-center br-2">
+                <img src="./images/card-hero.jpg" alt="" class="card-image">
+                <div class="card-content grid-flow padding-48">
+                    <h2>Order Summary</h2>
+                    <p>You can now listen to millions of songs, audiobooks, and podcasts on any device, anywhere you like!</p>
+                    <div class="flex-row bg-neutral-200 text-align-left br-1 padding-24">
+                        <div>
+                            <img src="./images/icon-music.png" alt="" height="50" width="50">
+                        </div>
+                        <div>
+                            <p class="text-neutral-800 fw-extra-bold">Annual Plan</p>
+                            <p>$59.99/year</p>
+                        </div>
+                        <button class="link push-right">Change</button>
+                    </div>
+        
+                    <button class="btn btn-primary">Proceed to Payment</button>
+                    <button class="btn btn-secondary">Cancel Order</button>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
